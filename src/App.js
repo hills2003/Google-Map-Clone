@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect} from 'react';
+import "./test.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(props) {
+  useEffect(()=>{
+    const success=(position)=>{
+      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+      mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbHMiLCJhIjoiY2tvOGNncDVxMjRwazJxbHlkbG55OXk5aCJ9.E9W-GsOb5UkqqF3pcGdutw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });   
+       
+  
+      map.addControl(new mapboxgl.NavigationControl());
+  
+            new mapboxgl.Marker()
+        .setLngLat([position.coords.longitude,position.coords.latitude])
+        .addTo(map);
+    }
+
+    const Eror =()=>{
+      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbHMiLCJhIjoiY2tvOGNncDVxMjRwazJxbHlkbG55OXk5aCJ9.E9W-GsOb5UkqqF3pcGdutw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11'
+    });   
+     
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+          new mapboxgl.Marker()
+      .setLngLat([0.127758,51.507351])
+      .addTo(map);
+    }
+    navigator.geolocation.getCurrentPosition(success,Eror,{enableHighAccuracy:true})
+    
+  },[])
+        
+     
+    return (
+        <>
+          <div id ="map" className="map">
+
+
+         </div>  
+        </>
+    );
 }
 
 export default App;
