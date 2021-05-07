@@ -3,9 +3,11 @@ import "./test.css"
 
 
 function App(props) {
+
+  var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+
   useEffect(()=>{
     const success=(position)=>{
-      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
       mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbHMiLCJhIjoiY2tvOGNncDVxMjRwazJxbHlkbG55OXk5aCJ9.E9W-GsOb5UkqqF3pcGdutw';
       var map = new mapboxgl.Map({
         container: 'map',
@@ -21,7 +23,6 @@ function App(props) {
     }
 
     const Eror =()=>{
-      var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbHMiLCJhIjoiY2tvOGNncDVxMjRwazJxbHlkbG55OXk5aCJ9.E9W-GsOb5UkqqF3pcGdutw';
     var map = new mapboxgl.Map({
       container: 'map',
