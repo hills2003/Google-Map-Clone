@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Google-Map-Clone/static/css/main.06fb4589.chunk.css",
+    "main.js": "/Google-Map-Clone/static/js/main.31293941.chunk.js",
+    "main.js.map": "/Google-Map-Clone/static/js/main.31293941.chunk.js.map",
+    "runtime-main.js": "/Google-Map-Clone/static/js/runtime-main.44f7b623.js",
+    "runtime-main.js.map": "/Google-Map-Clone/static/js/runtime-main.44f7b623.js.map",
+    "static/js/2.ba9b773d.chunk.js": "/Google-Map-Clone/static/js/2.ba9b773d.chunk.js",
+    "static/js/2.ba9b773d.chunk.js.map": "/Google-Map-Clone/static/js/2.ba9b773d.chunk.js.map",
+    "index.html": "/Google-Map-Clone/index.html",
+    "static/css/main.06fb4589.chunk.css.map": "/Google-Map-Clone/static/css/main.06fb4589.chunk.css.map",
+    "static/js/2.ba9b773d.chunk.js.LICENSE.txt": "/Google-Map-Clone/static/js/2.ba9b773d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44f7b623.js",
+    "static/js/2.ba9b773d.chunk.js",
+    "static/css/main.06fb4589.chunk.css",
+    "static/js/main.31293941.chunk.js"
+  ]
+}

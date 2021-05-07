@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/test.css"],"names":[],"mappings":"AACA,EACI,SAAS,CACT,QACJ,CACA,KACI,YAAY,CACZ,YACJ","file":"main.06fb4589.chunk.css","sourcesContent":["\r\n*{\r\n    padding:0;\r\n    margin:0;\r\n}\r\n.map{\r\n    width:100%px;\r\n    height:100vh;\r\n}"]}
